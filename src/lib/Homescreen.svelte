@@ -22,6 +22,7 @@
     .layout {
         display: flex;
         height: 100vh;
+        width: 100vw;
     }
 
     section {
@@ -42,6 +43,9 @@
     }
 
     .homecards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         color: black;
         border: 1px solid black;
         width: 200px;
@@ -58,6 +62,11 @@
 
         h2 {
             font-size: 22px;
+        }
+
+        img {
+            width: 34px;
+            height: 34px;
         }
     }
 </style>
