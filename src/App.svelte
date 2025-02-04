@@ -1,9 +1,11 @@
 <script lang="ts">
+    import Homescreen from "./lib/Homescreen.svelte";
     import Sidebar from "./lib/Sidebar.svelte";
 </script>
 
 <main>
-    <Sidebar />
+    <!-- <Sidebar /> -->
+    <Homescreen />
 </main>
 
 <style>
