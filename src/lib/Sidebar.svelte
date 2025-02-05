@@ -105,7 +105,7 @@
 <style>
     .logo {
         width: 100%;
-        margin-bottom: 1rem;
+		margin-top: 20px;
     }
 
     .icon {
@@ -115,7 +115,8 @@
     }
 
     .sidebar {
-        padding: 1rem;
+        padding-left: 1rem;
+		padding-right: 1rem;
         width: 200px;
         height: 100vh;
         background-color: var(--color-primary);
