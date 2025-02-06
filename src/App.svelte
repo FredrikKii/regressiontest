@@ -1,18 +1,29 @@
 <script lang="ts">
-  import Fakturering from "./lib/Fakturering.svelte";
-    import Homescreen from "./lib/Homescreen.svelte";
-    import Sidebar from "./lib/Sidebar.svelte";
-</script>
-
-<main>
-    <Sidebar />
-	<Fakturering />
-    <!-- <Sidebar /> -->
-    <Homescreen />
-</main>
-
-<style>
-	main {
-		display: flex;
+	import Fakturering from "./lib/Fakturering.svelte";
+	import Homescreen from "./lib/Homescreen.svelte";
+	import Sidebar from "./lib/Sidebar.svelte";
+  
+	let currentScreen = "home"; // Standard: Homescreen visas först
+  
+	function setScreen(screen: string) {
+	  currentScreen = screen; // Uppdaterar aktiv skärm
 	}
-</style>
+  </script>
+  
+  <main>
+	<Sidebar on:navigate={(e) => setScreen(e.detail)} />
+	
+	<!-- Dynamiskt visa rätt komponent -->
+	{#if currentScreen === "home"}
+	  <Homescreen />
+	{:else if currentScreen === "fakturering"}
+	  <Fakturering />
+	{/if}
+  </main>
+  
+  <style>
+	main {
+	  display: flex;
+	}
+  </style>
+  

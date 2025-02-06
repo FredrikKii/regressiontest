@@ -4,7 +4,7 @@
 </script>
 
 <div class="layout">
-    <Sidebar />
+
     <section>
         <div class="grid-layout">
             {#each homeCards as card}
