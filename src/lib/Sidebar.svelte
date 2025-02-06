@@ -104,6 +104,7 @@
 
 <style>
     .logo {
+        margin-top: 1em;
         width: 100%;
 		margin-top: 20px;
     }
