@@ -120,7 +120,7 @@
 	.sidebar {
 	  padding-left: 1rem;
 	  padding-right: 1rem;
-	  width: 300px;
+	  width: 500px;
 	  height: 100vh;
 	  background-color: var(--color-primary);
 	}
