@@ -1,5 +1,4 @@
 <script lang="ts">
-    // Inget extra script behövs för detta exempel
 </script>
 
 <section>
@@ -16,10 +15,7 @@
 
 <style>
     select {
-        /* Låt elementet anpassa sig efter innehållet */
         width: auto;
-        /* Om du vill sätta en minsta bredd, exempelvis 10em: */
-        /* min-width: 10em; */
         border: none;
         height: 2em;
         white-space: nowrap;
