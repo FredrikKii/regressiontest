@@ -4,7 +4,6 @@
 </script>
 
 <div class="layout">
-
     <section>
         <div class="grid-layout">
             {#each homeCards as card}
@@ -48,7 +47,7 @@
         justify-content: space-between;
         color: black;
         border: 1px solid black;
-        width: 200px;
+        width: 300px;
         height: 200px;
         border-radius: 1em;
         padding: 1em;
