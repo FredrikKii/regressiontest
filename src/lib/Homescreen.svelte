@@ -1,6 +1,6 @@
 <script lang="ts">
     import { homeCards } from "../Data/homecards";
-    import Sidebar from "./Sidebar.svelte";
+    // import Sidebar from "./Sidebar.svelte";
 </script>
 
 <div class="layout">
@@ -47,7 +47,7 @@
         justify-content: space-between;
         color: black;
         border: 1px solid black;
-        width: 300px;
+        width: 200px;
         height: 200px;
         border-radius: 1em;
         padding: 1em;
