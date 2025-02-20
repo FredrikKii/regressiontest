@@ -15,7 +15,7 @@
             src="/Bjorn_Lunden_Logo_700.png"
             alt="Bjorn Lunden logo"
         />
-        <nav>
+        <nav class="nav">
             <ul>
                 <li>
                     <a href="#" on:click={() => navigate("home")}>
