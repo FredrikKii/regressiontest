@@ -33,3 +33,10 @@ test("Sidebar ska inte täcka korten", async ({ page }: { page: Page }) => {
         expect(sidebar.y + sidebar.height).toBeLessThanOrEqual(firstCard.y);
     }
 });
+
+
+test('Navigering via sidebar', async ({ page }) => {
+    await page.goto('http://localhost:5173');
+    await page.locator('.nav a:has-text("Fakturering")').click();
+    await expect(page).toHaveURL(/.*fakturering/);
+});
