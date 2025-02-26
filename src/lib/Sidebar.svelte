@@ -178,6 +178,7 @@
     @media (max-width: 768px) {
         .sidebar {
             left: -300px;
+            z-index: 2;
         }
 
         .sidebar.open {
@@ -194,6 +195,7 @@
     @media (min-width: 769px) {
         .sidebar {
             left: 0;
+            z-index: 2;
         }
 
         .hamburger {

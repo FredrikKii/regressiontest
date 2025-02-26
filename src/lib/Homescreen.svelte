@@ -4,6 +4,7 @@
 </script>
 
 <div class="layout">
+    <hr />
     <section>
         <div class="grid-layout">
             {#each homeCards as card}
@@ -35,6 +36,7 @@
     }
 
     .grid-layout {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -76,6 +78,21 @@
             gap: 20px;
             margin-top: 8em;
             margin-left: 200px;
+        }
+
+        hr {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4em;
+            margin: 0;
+            background-color: white;
+            z-index: 1;
+            border: none;
+            -webkit-box-shadow: 0px 21px 24px -4px rgba(255, 255, 255, 1);
+            -moz-box-shadow: 0px 21px 24px -4px rgba(255, 255, 255, 1);
+            box-shadow: 0px 21px 24px -4px rgba(255, 255, 255, 1);
         }
     }
 
