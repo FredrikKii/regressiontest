@@ -68,4 +68,24 @@
             height: 34px;
         }
     }
+
+    @media (max-width: 1366px) {
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 8em;
+            margin-left: 200px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 8em;
+            margin-left: 0;
+        }
+    }
 </style>

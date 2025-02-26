@@ -14,8 +14,8 @@ test.describe("Mobilvy (iPhone 12)", () => {
   test("Sidebaren ska ersättas av hamburgarmenyn", async ({ page }: { page: Page }) => {
     await page.goto("http://localhost:5173");
 
-    await expect(page.locator(".hamburger-menu")).toBeVisible();
-    await expect(page.locator(".sidebar")).toBeHidden();
+    await expect(page.locator(".hamburger")).toBeVisible();
+    await expect(page.locator("sidebar")).toBeHidden();
   });
 });
 
