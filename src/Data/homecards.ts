@@ -39,7 +39,7 @@ export interface Homecard {
 	{
 	  name: "Fakturering",
 	  icon: "/Invoice-black.svg",
-	  path: "/invoice",
+	  path: "/fakturering",
 	  description: "Skapa, skicka och hantera dina fakturor enkelt."
 	},
 	{

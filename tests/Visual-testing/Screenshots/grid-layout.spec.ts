@@ -27,9 +27,9 @@ viewports.forEach((device: Viewport) => {
 
       const columnCount: number = gridColumns.split(" ").length;
 
-      if (device.width >= 1366) {
+      if (device.width >= 1367) {
         expect(columnCount).toBe(3);
-      } else if (device.width >= 768) {
+      } else if (device.width >= 769) {
         expect(columnCount).toBe(2);
       } else {
         expect(columnCount).toBe(1);

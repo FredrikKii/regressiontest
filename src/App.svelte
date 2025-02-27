@@ -1,5 +1,6 @@
 <script lang="ts">
     import Fakturering from "./lib/Fakturering.svelte";
+    import Header from "./lib/Header.svelte";
     import Homescreen from "./lib/Homescreen.svelte";
     import Sidebar from "./lib/Sidebar.svelte";
 
@@ -11,6 +12,7 @@
 </script>
 
 <main>
+    <Header />
     <Sidebar on:navigate={(e) => setScreen(e.detail)} />
 
     <!-- Dynamiskt visa rätt komponent -->
